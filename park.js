@@ -23,7 +23,6 @@ Park.prototype.mostPopularDino = function(){
     if (dinosaur.vistors > mostPopularDino.vistors){
       dinosaur = mostPopularDino
     }
-
   }
   return mostPopularDino
 }
@@ -44,13 +43,14 @@ Park.prototype.totalCustomers = function(){
 }
 
 Park.prototype.totalCustomersPerYear = function(){
-  total = 0
-  for(let dinosaur of this.dinosaurs){
-    total += dinosaur.visitors
-    verdict = total * 360
-  }
-  return verdict
-}
+//   total = 0
+//   for(let dinosaur of this.dinosaurs){
+//     total += dinosaur.visitors
+//     verdict = total * 360
+//   }
+//   return verdict
+// }
+return this.totalCustomers()*360}
 
 Park.prototype.totalRevenuePerYear = function(){
   total = 0
